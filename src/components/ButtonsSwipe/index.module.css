@@ -1,0 +1,32 @@
+.btn {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #cccccc;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.active {
+  transform: scale(1.333);
+  background-color: #7b61ff;
+}
+
+.rowButtons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.arrowBtn {
+  background-color: inherit;
+  cursor: pointer;
+  transition: all 0.3s;
+  border-radius: 4px;
+  margin: 0px 6px;
+}
+
+.arrowBtn:hover {
+  transform: scale(1.1);
+  background-color: #e6e6e6;
+}

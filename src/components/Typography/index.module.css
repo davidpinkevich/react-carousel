@@ -1,0 +1,11 @@
+.typographyTitle {
+  text-align: center;
+  font-size: 80px;
+  font-weight: 700;
+}
+
+.typographySubtitle {
+  text-align: center;
+  font-size: 18px;
+  line-height: 140%;
+}
