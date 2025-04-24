@@ -5,3 +5,35 @@
   overflow: hidden;
   margin-top: 44px;
 }
+
+@media (max-width: 1260px) {
+  .swiper {
+    width: 1000px;
+    height: 300px;
+    margin-top: 34px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .swiper {
+    width: 800px;
+    height: 250px;
+    margin-top: 24px;
+  }
+}
+
+@media (max-width: 820px) {
+  .swiper {
+    width: 600px;
+    height: 300px;
+    margin-top: 14px;
+  }
+}
+
+@media (max-width: 620px) {
+  .swiper {
+    width: 375px;
+    height: 400px;
+    margin-top: 0;
+  }
+}

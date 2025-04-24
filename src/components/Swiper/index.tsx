@@ -1,8 +1,13 @@
 import { useState } from "react";
+
+import { useWindowSize } from "../../hooks/use-window-size";
+
 import { Item } from "../Item";
 import { ButtonsSwipe } from "../ButtonsSwipe";
-import styles from "./index.module.css";
+
 import { getTypeItem } from "../../utils/helpers/get-type-item";
+
+import styles from "./index.module.css";
 
 export const Swiper = ({ rowItems }: { rowItems: string[] }) => {
   const rowLength = rowItems.length;
@@ -12,6 +17,8 @@ export const Swiper = ({ rowItems }: { rowItems: string[] }) => {
   const [startEvent, setStartEvent] = useState(false);
   const [pointA, setPointA] = useState(0);
   const [pointB, setPointB] = useState(0);
+
+  const { size } = useWindowSize();
 
   const handleStart = (e: React.MouseEvent<HTMLDivElement>) => {
     e.preventDefault();
@@ -63,6 +70,7 @@ export const Swiper = ({ rowItems }: { rowItems: string[] }) => {
           <Item
             key={i}
             image={item}
+            size={size}
             startEvent={startEvent}
             diff={pointA - pointB}
             type={getTypeItem(i, currentSlide, rowLength)}

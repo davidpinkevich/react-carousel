@@ -6,17 +6,19 @@ export const Item = ({
   image,
   type,
   diff,
+  size,
   startEvent,
 }: {
   startEvent: boolean;
   image: string;
   type: string;
   diff: number;
+  size: number;
 }) => {
   return (
     <div
       className={`${styles.item} ${styles[type]}`}
-      style={getCssValues(type, diff, startEvent, 100)}
+      style={getCssValues(type, diff, startEvent, 100, size)}
     >
       <img src={image} />
     </div>

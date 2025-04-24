@@ -9,3 +9,30 @@
   font-size: 18px;
   line-height: 140%;
 }
+
+@media (max-width: 1260px) {
+  .typographyTitle {
+    font-size: 64px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .typographyTitle {
+    font-size: 54px;
+  }
+}
+
+@media (max-width: 820px) {
+  .typographyTitle {
+    font-size: 44px;
+  }
+  .typographySubtitle {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 620px) {
+  .typographyTitle {
+    font-size: 38px;
+  }
+}
