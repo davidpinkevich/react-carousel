@@ -13,3 +13,19 @@ export type ChangedPositionTypes = {
     PositionTypes
   ];
 };
+
+export type ItemType = {
+  startEvent: boolean;
+  image: string;
+  type: string;
+  diff: number;
+  size: number;
+};
+
+export type ButtonsSwipeType = {
+  rowItems: string[];
+  current: number;
+  onClickCircle: (id: number) => void;
+  onClickLeft: () => void;
+  onClickRight: () => void;
+};

@@ -1,6 +1,8 @@
 import arrowLeft from "../../assets/icons/arrow-left.svg";
 import arrowRight from "../../assets/icons/arrow-right.svg";
 
+import { type ButtonsSwipeType } from "../../types";
+
 import styles from "./index.module.css";
 
 export const ButtonsSwipe = ({
@@ -9,13 +11,7 @@ export const ButtonsSwipe = ({
   onClickCircle,
   onClickLeft,
   onClickRight,
-}: {
-  rowItems: string[];
-  current: number;
-  onClickCircle: (id: number) => void;
-  onClickLeft: () => void;
-  onClickRight: () => void;
-}) => {
+}: ButtonsSwipeType) => {
   return (
     <div className={styles.rowButtons}>
       <button className={styles.arrowBtn} onClick={onClickLeft}>

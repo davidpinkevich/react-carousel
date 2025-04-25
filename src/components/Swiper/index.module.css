@@ -3,14 +3,13 @@
   height: 400px;
   position: relative;
   overflow: hidden;
-  margin-top: 44px;
+  touch-action: none;
 }
 
 @media (max-width: 1260px) {
   .swiper {
     width: 1000px;
     height: 300px;
-    margin-top: 34px;
   }
 }
 
@@ -18,7 +17,6 @@
   .swiper {
     width: 800px;
     height: 250px;
-    margin-top: 24px;
   }
 }
 
@@ -26,7 +24,6 @@
   .swiper {
     width: 600px;
     height: 300px;
-    margin-top: 14px;
   }
 }
 
@@ -34,6 +31,5 @@
   .swiper {
     width: 375px;
     height: 400px;
-    margin-top: 0;
   }
 }

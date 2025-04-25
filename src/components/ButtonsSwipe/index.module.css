@@ -30,3 +30,21 @@
   transform: scale(1.1);
   background-color: #e6e6e6;
 }
+
+@media (max-width: 620px) {
+  .rowButtons {
+    margin-top: 20px;
+    gap: 16px;
+  }
+  .btn {
+    width: 18px;
+    height: 18px;
+  }
+
+  .arrowBtn {
+    transform: scale(1.4);
+  }
+  .arrowBtn:hover {
+    transform: scale(1.4);
+  }
+}

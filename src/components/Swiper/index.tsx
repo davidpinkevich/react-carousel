@@ -5,6 +5,7 @@ import { Item } from "../Item";
 
 import { DISTANCE_ANIMATION } from "../../constants";
 import { useWindowSize } from "../../hooks/use-window-size";
+import { getClientX } from "../../utils/helpers/get-client-x";
 import { getTypeItem } from "../../utils/helpers/get-type-item";
 
 import styles from "./index.module.css";
@@ -20,16 +21,18 @@ export const Swiper = ({ rowItems }: { rowItems: string[] }) => {
 
   const { size } = useWindowSize();
 
-  const handleStart = (e: React.MouseEvent<HTMLDivElement>) => {
+  const handleStart = (e: React.MouseEvent | React.TouchEvent) => {
     e.preventDefault();
+    const clientX = getClientX(e);
     setStartEvent(true);
-    setPointA(e.clientX);
-    setPointB(e.clientX);
+    setPointA(clientX);
+    setPointB(clientX);
   };
 
-  const handleMove = (e: React.MouseEvent<HTMLDivElement>) => {
+  const handleMove = (e: React.MouseEvent | React.TouchEvent) => {
     if (startEvent) {
-      setPointB(e.clientX);
+      const clientX = getClientX(e);
+      setPointB(clientX);
       if (pointA - pointB > DISTANCE_ANIMATION) {
         setStartEvent(false);
         handleClickRight();

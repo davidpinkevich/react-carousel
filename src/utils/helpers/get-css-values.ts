@@ -13,7 +13,8 @@ export const getCssValues = (
 
   const transition = "all 0s";
   const cursor = startEvent ? "grabbing" : "grab";
-  const zIndex = diff < 0 ? 1 : -1;
+  const zIndexLeft = diff < 0 ? 1 : -1;
+  const zIndexRight = diff < 0 ? -1 : 1;
   const transformOrigin = "left center";
 
   switch (type) {
@@ -46,14 +47,14 @@ export const getCssValues = (
         ...createCssAnimation(...ROUTES["outsideLeft"], diff, size, distance),
         transition,
         cursor,
-        zIndex,
+        zIndex: zIndexLeft,
       };
     case "outsideRight":
       return {
         ...createCssAnimation(...ROUTES["outsideRight"], diff, size, distance),
         transition,
         cursor,
-        zIndex,
+        zIndex: zIndexRight,
       };
   }
 };
