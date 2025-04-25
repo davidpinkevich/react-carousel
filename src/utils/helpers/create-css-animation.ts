@@ -3,7 +3,7 @@ import { getMaxWidth } from "./get-max-width";
 
 import { animationParams } from "../../constants";
 
-import { type PositionTypes } from "../../components/types";
+import { type PositionTypes } from "../../types";
 
 export const createCssAnimation = (
   fromLeft: PositionTypes,

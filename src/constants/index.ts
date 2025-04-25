@@ -4,7 +4,7 @@ import image3 from "../assets/images/3.webp";
 import image4 from "../assets/images/4.webp";
 import image5 from "../assets/images/5.webp";
 
-import { type ChangedPositionTypes } from "../components/types";
+import { type ChangedPositionTypes } from "../types";
 
 export const ROWS_ITEMS = [image1, image2, image3, image4, image5];
 
