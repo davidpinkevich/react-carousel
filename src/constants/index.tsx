@@ -10,8 +10,14 @@ export const ROWS_ITEMS = [image1, image2, image3, image4, image5];
 
 export const TITILE_TEXT = "Simple Image Carousel";
 
-export const SUBTITILE_TEXT =
-  "5 x Image items ❖ Carousel Interactive Components & Variants";
+export const Subtitle = () => {
+  return (
+    <>
+      5 x Image items ❖ <span>Carousel</span>
+      <br /> Interactive Components & Variants
+    </>
+  );
+};
 
 export const DISTANCE_ANIMATION = 100;
 

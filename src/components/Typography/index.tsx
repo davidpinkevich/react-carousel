@@ -1,13 +1,16 @@
+import { type ReactNode } from "react";
+
 import styles from "./index.module.css";
 
 export const Typography = ({
-  text,
+  children,
   type,
 }: {
-  text: string;
+  children: string | ReactNode;
   type: "h1" | "h2";
 }) => {
-  if (type === "h1") return <h1 className={styles.typographyTitle}>{text}</h1>;
+  if (type === "h1")
+    return <h1 className={styles.typographyTitle}>{children}</h1>;
 
-  return <h2 className={styles.typographySubtitle}>{text}</h2>;
+  return <h2 className={styles.typographySubtitle}>{children}</h2>;
 };
