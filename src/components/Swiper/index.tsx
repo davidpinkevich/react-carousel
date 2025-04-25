@@ -1,10 +1,10 @@
 import { useState } from "react";
 
-import { useWindowSize } from "../../hooks/use-window-size";
-
 import { Item } from "../Item";
 import { ButtonsSwipe } from "../ButtonsSwipe";
 
+import { useWindowSize } from "../../hooks/use-window-size";
+import { DISTANCE_ANIMATION } from "../../constants";
 import { getTypeItem } from "../../utils/helpers/get-type-item";
 
 import styles from "./index.module.css";
@@ -30,12 +30,12 @@ export const Swiper = ({ rowItems }: { rowItems: string[] }) => {
   const handleMove = (e: React.MouseEvent<HTMLDivElement>) => {
     if (startEvent) {
       setPointB(e.clientX);
-      if (pointA - pointB > 100) {
+      if (pointA - pointB > DISTANCE_ANIMATION) {
         setStartEvent(false);
         handleClickRight();
       }
 
-      if (pointA - pointB < -100) {
+      if (pointA - pointB < -DISTANCE_ANIMATION) {
         setStartEvent(false);
         handleClickLeft();
       }

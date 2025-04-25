@@ -1,4 +1,5 @@
 import { getCssValues } from "../../utils/helpers/get-css-values";
+import { DISTANCE_ANIMATION } from "../../constants";
 
 import styles from "./index.module.css";
 
@@ -18,7 +19,7 @@ export const Item = ({
   return (
     <div
       className={`${styles.item} ${styles[type]}`}
-      style={getCssValues(type, diff, startEvent, 100, size)}
+      style={getCssValues(type, diff, startEvent, DISTANCE_ANIMATION, size)}
     >
       <img src={image} />
     </div>
