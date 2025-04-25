@@ -1,10 +1,10 @@
 import { useState } from "react";
 
-import { Item } from "../Item";
 import { ButtonsSwipe } from "../ButtonsSwipe";
+import { Item } from "../Item";
 
-import { useWindowSize } from "../../hooks/use-window-size";
 import { DISTANCE_ANIMATION } from "../../constants";
+import { useWindowSize } from "../../hooks/use-window-size";
 import { getTypeItem } from "../../utils/helpers/get-type-item";
 
 import styles from "./index.module.css";

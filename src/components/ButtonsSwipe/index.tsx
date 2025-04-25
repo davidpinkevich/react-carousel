@@ -1,6 +1,7 @@
-import styles from "./index.module.css";
 import arrowLeft from "../../assets/icons/arrow-left.svg";
 import arrowRight from "../../assets/icons/arrow-right.svg";
+
+import styles from "./index.module.css";
 
 export const ButtonsSwipe = ({
   current,

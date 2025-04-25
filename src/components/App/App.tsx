@@ -1,7 +1,7 @@
-import { Typography } from "../Typography";
 import { Swiper } from "../Swiper";
+import { Typography } from "../Typography";
 
-import { ROWS_ITEMS, TITILE_TEXT, SUBTITILE_TEXT } from "../../constants";
+import { ROWS_ITEMS, SUBTITILE_TEXT, TITILE_TEXT } from "../../constants";
 
 import styles from "./index.module.css";
 

@@ -1,5 +1,5 @@
-import { getCssValues } from "../../utils/helpers/get-css-values";
 import { DISTANCE_ANIMATION } from "../../constants";
+import { getCssValues } from "../../utils/helpers/get-css-values";
 
 import styles from "./index.module.css";
 
